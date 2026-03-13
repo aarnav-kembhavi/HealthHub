@@ -1,0 +1,110 @@
+\section{IoT-Based Health Monitoring Systems}
+
+\begin{enumerate}
+    \item Remote Patient Monitoring Systems
+    \begin{itemize}
+        \item Commercial solutions like Philips HealthSuite Digital Platform and Medtronic CareLink provide continuous monitoring but typically lack conversational interfaces
+        \item Most systems require healthcare provider interpretation of data
+        \item Limited personalization capabilities for individual user needs
+    \end{itemize}
+
+    \item Wearable Health Trackers
+    \begin{itemize}
+        \item Consumer devices (Fitbit, Apple Watch, Samsung Galaxy Watch) offer basic vital sign monitoring
+        \item Typically monitor limited parameters (heart rate, activity, sometimes ECG)
+        \item Data presentation is primarily visual/graphical with minimal natural language interpretation
+        \item Users often struggle to contextualize the health significance of their data
+    \end{itemize}
+
+    \item Smart Home Health Monitoring
+    \begin{itemize}
+        \item Smart home platforms integrating health devices (Amazon Alexa + Omron blood pressure monitor)
+        \item Basic voice command capabilities but limited to simple queries
+        \item Lack comprehensive vital sign integration and contextual health understanding
+    \end{itemize}
+\end{enumerate}
+
+\section{Conversational Health Interfaces}
+
+\begin{enumerate}
+    \item Healthcare Chatbots
+    \begin{itemize}
+        \item Systems like Ada Health, Babylon Health, and Buoy Health provide symptom assessment
+        \item Focus primarily on diagnostic information rather than personal health data interpretation
+        \item Limited integration with real-time physiological monitoring devices
+        \item Typically use rule-based approaches rather than advanced NLP techniques
+    \end{itemize}
+
+    \item Voice Assistants in Healthcare
+    \begin{itemize}
+        \item Voice-enabled systems (Alexa Skills for healthcare, Google Assistant healthcare actions)
+        \item Capabilities include medication reminders, appointment scheduling, and basic health information
+        \item Limited in processing and contextualizing continuous health data streams
+        \item Privacy concerns with cloud-based processing of sensitive health information
+    \end{itemize}
+
+    \item Natural Language Understanding in Health Data
+    \begin{itemize}
+        \item Research systems employing NLP for electronic health records (EHRs)
+        \item Focus on clinical documentation rather than consumer-facing applications
+        \item Limited capabilities for real-time data processing from IoT devices
+        \item Few systems combine IoT sensor data with conversational interfaces
+    \end{itemize}
+\end{enumerate}
+
+\section{Key Limitations}
+
+\begin{enumerate}
+    \item Integration Challenges
+    \begin{itemize}
+        \item Most solutions either focus on robust IoT monitoring OR natural language interfaces, rarely both
+        \item Limited interconnectivity between sensing devices and conversational systems
+        \item Data silos prevent comprehensive health insights
+    \end{itemize}
+
+    \item Technical Complexity
+    \begin{itemize}
+        \item Existing systems often require technical expertise to install, configure and interpret
+        \item Complex user interfaces create barriers for elderly or non-technical users
+        \item Data visualization without context-aware explanations limits usefulness
+    \end{itemize}
+
+    \item Limited Personalization
+    \begin{itemize}
+        \item Generic health advice rather than personalized insights based on individual data patterns
+        \item Minimal adaptation to user's health literacy level or communication preferences
+        \item One-size-fits-all approaches to data presentation and interaction
+    \end{itemize}
+
+    \item Privacy and Security
+    \begin{itemize}
+        \item Centralized data storage raising privacy issues
+        \item Limited transparency in how health data is processed and stored
+        \item Inadequate security measures for sensitive personal health information
+    \end{itemize}
+
+    \item RAG Limitations
+    \begin{itemize}
+        \item Few systems leverage RAG capabilities for personalized health information retrieval
+        \item Limited contextual understanding when processing natural language queries about health data
+        \item Lack of integration between personal health data repositories and language models
+    \end{itemize}
+\end{enumerate}
+
+\begin{table}[ht]
+\centering
+\caption{Table 1.1: Literature Review Comparison of Existing Systems}
+\begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash}p{3.5cm} >{\raggedright\arraybackslash}p{4.5cm} >{\raggedright\arraybackslash}X @{}}
+\toprule
+\textbf{Paper Name} & \textbf{Authors / Publication} & \textbf{Abstract} \\
+\midrule
+Web Development and performance comparison of Web Development Technologies in Node.js and Python & Sai Sri Nandan Challapalli, Prakarsh Kaushik, Shashank Kumar, Basil Dev Shivashok, Vimal Babu, Amar Deep Gupta \newline International Conference on Technological Advancements and Innovations (ICTAI) 2023 & Node.js significantly outperforms Python in web server performance tests, handling a substantially larger number of requests per second while maintaining similar latency times. The study utilizes Locust and Autocannon for benchmarking, showing Node.js's superiority in handling concurrent user requests. Keywords: Web development, API, Python, Locust, Autocannon, Framework, Full-stack \\
+\midrule
+Retrieval Augmented Generation for 10 Large Language Models on its Generalizability in Assessing Medical Fitness & Yu He Ke, Liyuan Jin, Kabilan Elangovan, Laila Rizqy Rizal Abdullah, Nan Liu, Alex Theng Heng Sia, Cia Yik Chit, Joshua Yi Min Tung, Jasmine Chua Ling Qing,Chang Fu Kuo, Chaolong Wu, Weiss Prokofiev, Daniel Shu Wei Ting \newline International Conference on Business and Artificial Intelligence (ICBAI) | Science Society 2024 & The study successfully implemented LLM-RAG models for prospective healthcare tasks, highlighting the benefits of grounded knowledge, upgradability, and scalability. The GPTs RAG model with international guidelines outperformed human specialists in generating medical fitness assessments and demonstrated generalizability across international and local guidelines. Keywords: Large language model, artificial intelligence, retrieval-augmented generation \\
+\midrule
+Systematic Analysis of Retrieval Augmented Generation Models for Medical Chatbot Applications & Arunabh Bora and Heriberto Cooper \newline Machines Learning and Knowledge Extraction (MAKE) 2023 & The study found that fine-tuning and retrieval augmented generation (RAG) are crucial for improved performance of LLMs in medical chatbot applications. Methodology Type A (standard question answering) outperforms Type B (language generation and probability confidence score generation). \\
+\midrule
+The Intersection of Generative AI and Healthcare: Addressing Challenges to Enhance Patient Care & Elham Alborudi, Taha Mansouri, Ali Alameer \newline 2024 Seventh International Women in Data Science Conference at Prince Sultan University (WiDS-PSU) & The research analyzes the intersection of generative AI and healthcare, highlighting its potential for process automation, patient care, and diagnosis. However, it also identifies challenges to successful primary care use, including data compliance, imposing solutions such as prioritizing data privacy, quality oversight, and proactive engagement with regulators. \\
+\bottomrule
+\end{tabularx}
+\end{table}
