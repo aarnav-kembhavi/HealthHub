@@ -1,4 +1,19 @@
-import { Heart, Home, Send, User, FileText, Activity, Apple, LineChart, ClipboardList, Mic, Shield } from "lucide-react";
+import {
+  Heart,
+  Home,
+  Send,
+  User,
+  FileText,
+  Activity,
+  Apple,
+  LineChart,
+  ClipboardList,
+  Mic,
+  Shield,
+  HardHat,
+  Video,
+  LayoutDashboard,
+} from "lucide-react";
 import { SidebarConfig } from "@/lib/types/sidebar";
 
 const sidebarConfig: SidebarConfig = {
@@ -65,6 +80,32 @@ const sidebarConfig: SidebarConfig = {
       collapsible: true,
       icon: Heart,
       collapsibleTitle: "Health Tools"
+    },
+    {
+      label: "Industrial Safety",
+      items: [
+        {
+          title: "Live Monitoring",
+          href: "/safety/live",
+          icon: Video,
+          description: "Real-time camera and PPE stream",
+        },
+        {
+          title: "Violations",
+          href: "/safety/logs",
+          icon: ClipboardList,
+          description: "PPE violation history and snapshots",
+        },
+        {
+          title: "Risk Dashboard",
+          href: "/safety/risk",
+          icon: LayoutDashboard,
+          description: "Aggregate risk score and trends",
+        },
+      ],
+      collapsible: true,
+      icon: HardHat,
+      collapsibleTitle: "Industrial Safety",
     },
     {
       label: "Documents",

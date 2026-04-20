@@ -58,7 +58,23 @@ const routes = {
   "/health/documents": {
     name: "Generate Prescription",
     path: "/health/documents",
-  }
+  },
+  "/safety": {
+    name: "Industrial Safety",
+    path: "/safety/live",
+  },
+  "/safety/live": {
+    name: "Live Monitoring",
+    path: "/safety/live",
+  },
+  "/safety/logs": {
+    name: "Violations",
+    path: "/safety/logs",
+  },
+  "/safety/risk": {
+    name: "Risk Dashboard",
+    path: "/safety/risk",
+  },
 }
 
 export function Breadcrumbs({ 

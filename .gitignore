@@ -10,6 +10,17 @@ Thumbs.db
 .env.*
 !.env.example
 
+# Python virtual environments (do not commit site-packages)
+health-monitor-api/venv/
+
+# Folded nested repo backup (do not commit)
+health-monitor-api/Construction-Site-Safety-PPE-Detection/.git-nested-backup/
+
+# PPE Model-Deployment local/runtime artifacts
+health-monitor-api/Construction-Site-Safety-PPE-Detection/Model-Deployment/detections.db
+health-monitor-api/Construction-Site-Safety-PPE-Detection/Model-Deployment/instance_counter.json
+health-monitor-api/Construction-Site-Safety-PPE-Detection/Model-Deployment/snapshots/
+
 # Logs
 *.log
 npm-debug.log*

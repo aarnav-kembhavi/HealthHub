@@ -1,0 +1,9 @@
+# PPE Model-Deployment (Flask) — install into health-monitor-api venv or a dedicated venv:
+#   ..\..\venv\Scripts\pip.exe install -r requirements.txt
+flask>=3.0.0
+flask-socketio>=5.3.0
+python-socketio>=5.10.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+ultralytics>=8.0.0
